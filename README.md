@@ -1,9 +1,10 @@
-# Elysia with Bun runtime
+# Elysia Pets with Bun runtime
 
-## Getting Started
-To get started with this template, simply paste this command into your terminal:
+## Environment
+Create `.env` file for database connection
+
 ```bash
-bun create elysia ./elysia-example
+DATABASE_URL=postgresql://<user>:<password>@<host>:<port>/<database_name>
 ```
 
 ## Development
@@ -12,4 +13,4 @@ To start the development server run:
 bun run dev
 ```
 
-Open http://localhost:3000/ with your browser to see the result.
+Open http://localhost:8001/ with your browser to see the result.
