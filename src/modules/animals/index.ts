@@ -1,5 +1,5 @@
 import Elysia from 'elysia';
-import { ERROR_MESSAGE, HTTP_STATUS } from '../../db/common/enums';
+import { ERROR_MESSAGE, HTTP_STATUS } from '../../common/enums';
 
 const Animals = new Elysia({ name: 'Animals', prefix: '/animals' })
 	.get('/', ({ error }) =>
