@@ -14,3 +14,7 @@ bun run dev
 ```
 
 Open http://localhost:8001/ with your browser to see the result.
+
+# REST client for VSCode plugin
+
+[REST Client for VSCode](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
