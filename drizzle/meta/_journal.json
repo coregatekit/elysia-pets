@@ -15,6 +15,13 @@
       "when": 1739898633129,
       "tag": "0001_lush_celestials",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1739898702733,
+      "tag": "0002_blue_otto_octavius",
+      "breakpoints": true
     }
   ]
 }
