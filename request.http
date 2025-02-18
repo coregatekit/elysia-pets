@@ -1,0 +1,10 @@
+### Http Requests ###
+@hostname = localhost
+@port = 8001
+@contextPath = /api
+@basePath = http://{{hostname}}:{{port}}{{contextPath}}
+
+### Health Check ###
+GET {{basePath}}/health HTTP/1.1
+
+###
