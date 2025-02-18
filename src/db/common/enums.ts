@@ -1,3 +1,7 @@
+enum ERROR_MESSAGE {
+	NOT_IMPLEMENTED = 'Not implemented',
+}
+
 enum HTTP_STATUS {
 	OK = 200,
 	CREATED = 201,
@@ -10,6 +14,4 @@ enum HTTP_STATUS {
 	NOT_IMPLEMENTED = 501,
 }
 
-
-
-export { HTTP_STATUS };
+export { ERROR_MESSAGE, HTTP_STATUS };
