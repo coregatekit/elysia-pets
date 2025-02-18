@@ -12,6 +12,7 @@
     "postgres": "^3.4.5"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.9.4",
     "bun-types": "latest",
     "drizzle-kit": "^0.30.4"
   },
