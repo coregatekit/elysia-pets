@@ -1,3 +1,7 @@
+enum STANDARD_MESSAGE {
+	HEALTH_CHECK = "I'm fine, 괜찮아 😊",
+}
+
 enum ERROR_MESSAGE {
 	NOT_IMPLEMENTED = 'Not implemented',
 }
@@ -14,4 +18,4 @@ enum HTTP_STATUS {
 	NOT_IMPLEMENTED = 501,
 }
 
-export { ERROR_MESSAGE, HTTP_STATUS };
+export { STANDARD_MESSAGE, ERROR_MESSAGE, HTTP_STATUS };
