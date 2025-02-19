@@ -68,6 +68,32 @@ DELETE {{basePath}}/breeds/DF2D8409-1BA3-450F-AF81-5951ABAE424B HTTP/1.1
 ### Get all pets
 GET {{basePath}}/pets HTTP/1.1o
 
+### Get pet by id
+GET {{basePath}}/pets/DF2D8409-1BA3-450F-AF81-5951ABAE424B HTTP/1.1
+
+### Create new pet
+POST {{basePath}}/pets HTTP/1.1
+Content-Type: application/json
+
+# {
+#   "name": "Rex",
+#   "breedId": "DF2D8409-1BA3-450F-AF81-5951ABAE424B",
+#   "ownerId": "DF2D8409-1BA3-450F-AF81-5951ABAE424B"
+# }
+
+### Update pet
+PATCH {{basePath}}/pets/DF2D8409-1BA3-450F-AF81-5951ABAE424B HTTP/1.1
+Content-Type: application/json
+
+# {
+#   "name": "Rex",
+#   "breedId": "DF2D8409-1BA3-450F-AF81-5951ABAE424B",
+#   "ownerId": "DF2D8409-1BA3-450F-AF81-5951ABAE424B"
+# }
+
+### Delete pet
+DELETE {{basePath}}/pets/DF2D8409-1BA3-450F-AF81-5951ABAE424B HTTP/1.1
+
 ######################################################################
 ### Owners ###
 ### Get all owners
