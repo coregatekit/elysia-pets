@@ -1,5 +1,5 @@
 import { pgSchema, timestamp } from 'drizzle-orm/pg-core';
-import { DB_SCHEMA } from '../../common/constants';
+import { DB_SCHEMA } from '../../configs';
 
 const elysiaSchema = pgSchema(DB_SCHEMA);
 const timestamps = {

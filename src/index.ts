@@ -2,7 +2,7 @@ import 'dotenv/config';
 import { Elysia } from 'elysia';
 import Routes from './routes';
 import swagger from '@elysiajs/swagger';
-import { APP_VERSION } from './common/constants';
+import { APP_VERSION } from './configs';
 
 const PORT = process.env.PORT || 8001;
 
