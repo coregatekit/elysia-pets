@@ -7,4 +7,6 @@ const db = drizzle({
 	client: queryClient,
 });
 
+export type Database = typeof db;
+
 export default db;
