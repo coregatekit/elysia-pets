@@ -16,5 +16,11 @@ bun run dev
 Open http://localhost:8001/ with your browser to see the result.
 
 # REST client for VSCode plugin
+You can use `request.http` for API documentation.
 
 [REST Client for VSCode](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
+
+# Swagger
+You can also use swagger for API documentation.
+
+Open http://localhost:8001/api/docs
