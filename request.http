@@ -20,4 +20,8 @@ GET {{basePath}}/breeds HTTP/1.1
 
 ### Pets ###
 ### Get all pets
-GET {{basePath}}/pets HTTP/1.1
+GET {{basePath}}/pets HTTP/1.1o
+
+### Owners ###
+### Get all owners
+GET {{basePath}}/owners HTTP/1.1
