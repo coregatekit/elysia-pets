@@ -5,11 +5,12 @@ import {
 	STANDARD_MESSAGE,
 } from '../../common/enums';
 import AnimalService from './service';
+import db from '../../db';
 
 const Animals = new Elysia({ name: 'Animals', prefix: '/animals' })
-	.decorate('animalService', new AnimalService())
-	.get('/', ({ animalService }) => {
-		const animals = animalService.getAnimals();
+	.decorate('animalService', new AnimalService(db))
+	.get('/', async ({ animalService }) => {
+		const animals = await animalService.getAnimals();
 		return {
 			status: HTTP_STATUS.OK,
 			message: STANDARD_MESSAGE.SUCCESS,
