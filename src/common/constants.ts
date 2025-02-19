@@ -1,7 +1,7 @@
-const DB_SCHEMA = 'elysia-pets';
-const DB_INTEGRATION_SCHEMA = 'elysia-integration';
+const DB_URL = process.env.DATABASE_URL || '';
+const DB_SCHEMA = process.env.DATABASE_SCHEMA || 'elysia-pets';
 
 export {
+  DB_URL,
   DB_SCHEMA,
-  DB_INTEGRATION_SCHEMA,
 }

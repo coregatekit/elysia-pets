@@ -1,8 +1,9 @@
 import 'dotenv/config';
 import { drizzle } from 'drizzle-orm/postgres-js';
 import postgres from 'postgres';
+import { DB_URL } from '../common/constants';
 
-const queryClient = postgres(process.env.DATABASE_URL || '');
+const queryClient = postgres(DB_URL || '');
 const db = drizzle({
 	client: queryClient,
 });
