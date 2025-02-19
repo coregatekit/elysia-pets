@@ -1,5 +1,6 @@
 enum STANDARD_MESSAGE {
 	HEALTH_CHECK = "I'm fine, 괜찮아 😊",
+  SUCCESS = 'Success',
 }
 
 enum ERROR_MESSAGE {
