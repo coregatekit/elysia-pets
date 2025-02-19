@@ -98,3 +98,25 @@ DELETE {{basePath}}/pets/DF2D8409-1BA3-450F-AF81-5951ABAE424B HTTP/1.1
 ### Owners ###
 ### Get all owners
 GET {{basePath}}/owners HTTP/1.1
+
+### Get owner by id
+GET {{basePath}}/owners/DF2D8409-1BA3-450F-AF81-5951ABAE424B HTTP/1.1
+
+### Create new owner
+POST {{basePath}}/owners HTTP/1.1
+Content-Type: application/json
+
+# {
+#   "name": "John Doe"
+# }
+
+### Update owner
+PATCH {{basePath}}/owners/DF2D8409-1BA3-450F-AF81-5951ABAE424B HTTP/1.1
+Content-Type: application/json
+
+# {
+#   "name": "John Doe"
+# }
+
+### Delete owner
+DELETE {{basePath}}/owners/DF2D8409-1BA3-450F-AF81-5951ABAE424B HTTP/1.1
