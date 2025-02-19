@@ -9,5 +9,6 @@ const timestamps = {
 		.$onUpdate(() => new Date()),
 	deleted_at: timestamp(),
 };
+const integrationSchema = pgSchema('elysia-integration');
 
-export { elysiaSchema, timestamps };
+export { elysiaSchema, timestamps, integrationSchema };
