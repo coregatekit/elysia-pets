@@ -13,3 +13,7 @@ GET {{basePath}}/animals HTTP/1.1
 
 ### Get animal by id
 GET {{basePath}}/animals/DF2D8409-1BA3-450F-AF81-5951ABAE424B HTTP/1.1
+
+### Breeds ###
+### Get all breeds
+GET {{basePath}}/breeds HTTP/1.1
