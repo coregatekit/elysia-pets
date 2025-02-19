@@ -17,11 +17,29 @@ const Animals = new Elysia({ name: 'Animals', prefix: '/animals' })
 			data: animals,
 		};
 	})
-	.get('/:id', ({ params: { id }, error }) =>
-		error(HTTP_STATUS.NOT_IMPLEMENTED, {
+	.get('/:id', ({ params: { id }, error }) => {
+		return error(HTTP_STATUS.NOT_IMPLEMENTED, {
 			status: HTTP_STATUS.NOT_IMPLEMENTED,
 			message: ERROR_MESSAGE.NOT_IMPLEMENTED,
-		}),
-	);
+		});
+	})
+	.post('/', async ({ error }) => {
+		return error(HTTP_STATUS.NOT_IMPLEMENTED, {
+			status: HTTP_STATUS.NOT_IMPLEMENTED,
+			message: ERROR_MESSAGE.NOT_IMPLEMENTED,
+		});
+	})
+	.patch('/:id', async ({ params: { id }, error }) => {
+		return error(HTTP_STATUS.NOT_IMPLEMENTED, {
+			status: HTTP_STATUS.NOT_IMPLEMENTED,
+			message: ERROR_MESSAGE.NOT_IMPLEMENTED,
+		});
+	})
+	.delete('/:id', async ({ params: { id }, error }) => {
+		return error(HTTP_STATUS.NOT_IMPLEMENTED, {
+			status: HTTP_STATUS.NOT_IMPLEMENTED,
+			message: ERROR_MESSAGE.NOT_IMPLEMENTED,
+		});
+	});
 
 export default Animals;

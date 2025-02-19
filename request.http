@@ -7,6 +7,7 @@
 ### Health Check ###
 GET {{basePath}}/health HTTP/1.1
 
+######################################################################
 ### Animals ###
 ### Get all animals
 GET {{basePath}}/animals HTTP/1.1
@@ -14,14 +15,36 @@ GET {{basePath}}/animals HTTP/1.1
 ### Get animal by id
 GET {{basePath}}/animals/DF2D8409-1BA3-450F-AF81-5951ABAE424B HTTP/1.1
 
+### Create new animal
+POST {{basePath}}/animals HTTP/1.1
+Content-Type: application/json
+
+# {
+#   "name": "Dog"
+# }
+
+### Update animal
+PATCH {{basePath}}/animals/DF2D8409-1BA3-450F-AF81-5951ABAE424B HTTP/1.1
+Content-Type: application/json
+
+# {
+#   "name": "Dog"
+# }
+
+### Delete animal
+DELETE {{basePath}}/animals/DF2D8409-1BA3-450F-AF81-5951ABAE424B HTTP/1.1
+
+######################################################################
 ### Breeds ###
 ### Get all breeds
 GET {{basePath}}/breeds HTTP/1.1
 
+######################################################################
 ### Pets ###
 ### Get all pets
 GET {{basePath}}/pets HTTP/1.1o
 
+######################################################################
 ### Owners ###
 ### Get all owners
 GET {{basePath}}/owners HTTP/1.1
